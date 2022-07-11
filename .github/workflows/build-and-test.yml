@@ -16,7 +16,7 @@ jobs:
         ports:
           - 9324:9324
         volumes:
-          - ../../dev-docker/elasticmq.conf:/opt/elasticmq.conf
+          - ${{ github.workspace }}/dev-docker/elasticmq.conf:/opt/elasticmq.conf
     steps:
       - uses: actions/checkout@v3
 
